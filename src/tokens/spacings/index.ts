@@ -1,1 +1,1 @@
-export { default } from  './spacings'
+export { default } from "./spacings";
