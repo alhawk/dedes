@@ -1,10 +1,16 @@
 import React, { ReactNode, useRef } from "react";
 import { AriaButtonProps, useButton } from "react-aria";
 import { css } from "@emotion/css";
-import { colors } from "../../tokens";
+import { colors, spacings } from "../../tokens";
 
 export interface ButtonProps extends AriaButtonProps {
   children?: ReactNode;
+}
+
+const styles = {
+  backgroundColor: colors.colorPrimary,
+  margin: spacings.md,
+  fontSize: '25px'
 }
 
 const Button = (props: ButtonProps) => {
@@ -14,7 +20,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button
       {...buttonProps}
-      className={css({ backgroundColor: colors.colorSecondary })}
+      className={css(styles)}
     >
       {props.children}
     </button>
