@@ -2,14 +2,22 @@
   "name": "dedes",
   "version": "1.0.0",
   "description": "components library",
-  "main": "index.js",
   "repository": "https://github.com/alhawk/dedes.git",
-  "author": "alimul <alimulkhakim@gmail.com>",
+  "author": "Alimul Khakim <alimulkhakim@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "rollup-build-lib": "rollup -c"
+  },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
     "@types/react": "^18.2.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^3.25.3",
+    "rollup-plugin-dts": "^5.3.0",
+    "tslib": "^2.6.0",
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
@@ -18,5 +26,11 @@
   },
   "dependencies": {
     "react-aria": "^3.26.0"
-  }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }
