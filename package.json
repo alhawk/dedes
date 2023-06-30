@@ -1,7 +1,7 @@
 {
   "name": "dedes",
-  "version": "1.0.0",
-  "description": "components library",
+  "version": "0.0.1",
+  "description": "A component library inspired by local wisdom",
   "repository": "https://github.com/alhawk/dedes.git",
   "author": "Alimul Khakim <alimulkhakim@gmail.com>",
   "license": "MIT",
