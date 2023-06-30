@@ -25,6 +25,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "@emotion/css": "^11.11.2",
     "react-aria": "^3.26.0"
   },
   "main": "dist/cjs/index.js",

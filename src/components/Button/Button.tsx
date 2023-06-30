@@ -1,5 +1,7 @@
 import React, { ReactNode, useRef } from 'react'
 import { AriaButtonProps, useButton } from 'react-aria'
+import { css } from '@emotion/css'
+import { colors } from '../../tokens'
 
 export interface ButtonProps extends AriaButtonProps {
   children?: ReactNode
@@ -10,7 +12,7 @@ const Button = (props: ButtonProps) => {
   const { buttonProps } = useButton(props, ref)
 
   return (
-    <button {...buttonProps}>{props.children}</button>
+    <button {...buttonProps} className={css`background-color: ${colors.colorSecondary}`}>{props.children}</button>
   )
 }
 
